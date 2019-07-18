@@ -44,7 +44,7 @@ docker build -t dockage/tor-privoxy github.com/dockage/tor-privoxy
 The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/).
 
 ```bash
-wget https://raw.githubusercontent.com/dockage/tor-privoxy/master/docker-compose.yml
+wget https://raw.githubusercontent.com/aleksas/tor-privoxy/master/docker-compose.yml
 docker-compose up -d --scale tor=10
 ```
 
