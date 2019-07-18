@@ -45,7 +45,7 @@ The quickest way to get started is using [docker-compose](https://docs.docker.co
 
 ```bash
 wget https://raw.githubusercontent.com/dockage/tor-privoxy/master/docker-compose.yml
-docker-compose up
+docker-compose up -d --scale tor=10
 ```
 
 Alternately, you can manually launch the `tor-privoxy` container.
