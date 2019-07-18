@@ -52,16 +52,16 @@ Alternately, you can manually launch the `tor-privoxy` container.
 
 ```bash
 docker run --name='tor-privoxy' -d \
-  -p 9050:9050 \
-  -p 9051:9051 \
-  -p 8118:8118 \
+  -p 7000:9050 \
+  -p 8000:9051 \
+  -p 9000:8118 \
 dockage/tor-privoxy:latest
 ```
 
 The exposed ports are:
-* <code>9050</code>: Tor proxy (SOCKS5)
-* <code>9051</code>: Tor control port
-* <code>8118</code>: Privoxy (HTTP Proxy)
+* <code>7000</code>: Tor proxy (SOCKS5)
+* <code>8000</code>: Tor control port
+* <code>9000</code>: Privoxy (HTTP Proxy)
 
 # Maintenance
 
